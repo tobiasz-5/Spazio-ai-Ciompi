@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import HeroTitle from "./HeroTitle";
+import Image from "next/image";
 
 export default function HeroSlider() {
   return (
@@ -19,9 +20,10 @@ export default function HeroSlider() {
       {/* Slide 1 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
-          <img
+          <Image
             src="/spazio_ciompi_sfondo.png"
             alt="Spazio Ai Ciompi"
+            fill
             className="w-full h-full object-cover"
           />
         </div>
@@ -30,9 +32,10 @@ export default function HeroSlider() {
       {/* Slide 2 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
-          <img
+          <Image
             src="/seconda_immagine.jpeg"
             alt="Seconda immagine"
+            fill
             className="w-full h-full object-cover"
           />
         </div>
@@ -41,9 +44,10 @@ export default function HeroSlider() {
       {/* Slide 3 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
-          <img
+          <Image
             src="/terza_immagine.jpeg"
             alt="Terza immagine"
+            fill
             className="w-full h-full object-cover"
           />
         </div>
@@ -53,9 +57,10 @@ export default function HeroSlider() {
       {/* Slide 4 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
-          <img
+          <Image
             src="/specchio.jpeg"
             alt="Terza immagine"
+            fill
             className="w-full h-full object-cover"
           />
         </div>

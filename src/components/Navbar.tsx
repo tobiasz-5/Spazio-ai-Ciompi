@@ -54,7 +54,7 @@ export default function Navbar() {
               alt="IT" 
               width={18} 
               height={28} 
-              className="hover:brightness-125 transition duration-200 cursor-pointer" 
+              className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`}
             />
           </button>
           <button onClick={() => setLanguage("en")}>
@@ -63,7 +63,7 @@ export default function Navbar() {
               alt="EN" 
               width={18} 
               height={28} 
-              className="hover:brightness-125 transition duration-200 cursor-pointer" 
+              className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`}
             />
           </button>
         </div> 
