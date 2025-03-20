@@ -15,13 +15,13 @@ export default function InfoSection() {
             <a href="https://wa.me/393717665575" target="_blank" className="text-blue-600 hover:underline">
              +39 371 766 5575
             </a><br/><br/>
-            Altrimenti invia una <span className="font-bold">mail</span> all'indirizzo {" "}
+            Altrimenti invia una <span className="font-bold">mail</span> all&apos;indirizzo {" "}
             <a href="mailto:spazioaiciompi@gmail.com" className="text-blue-600 hover:underline">
               spazioaiciompi@gmail.com
             </a><br/><br/>
             La <span className="font-bold">stanza principale</span> ha una superficie di <span className="font-bold">40mq</span> <br/><br/> Lo spazio dispone inoltre dei <span className="font-bold">servizi</span> e di un ulteriore <span className="font-bold">spazio separato</span> per la preparazione di cibi freddi e bevande <br/><br/>
             Disponibile per la prenotazione <span className="font-bold">tutti i giorni</span> della settimana <br/><br/>
-            L'orario di utilizzo è dalle <span className="font-bold">10:00</span> alle <span className="font-bold">23:00</span>
+            L&apos;orario di utilizzo è dalle <span className="font-bold">10:00</span> alle <span className="font-bold">23:00</span>
           </p>
         </div>
       </section>
