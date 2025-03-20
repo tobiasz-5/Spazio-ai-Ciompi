@@ -7,43 +7,60 @@ export default function Navbar() {
   const [language, setLanguage] = useState("it");
   const [hoverColorDove, setHoverColorDove] = useState("");
   const [hoverColorChi, setHoverColorChi] = useState("");
+  // const [hoverColorGalleria, setHoverColorGalleria] = useState("");
+  // const [hoverColorInfo, setHoverColorInfo] = useState("");
+
   const colors = ["text-blue-400", "text-red-400", "text-green-400", "text-orange-400", "text-purple-400"];
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
   return (
-    <nav className="w-full h-25 absolute top-0 left-0 z-50 p-1 flex items-center bg-gradient-to-b from-black to-transparent">
+    <nav className="w-full h-25 absolute top-0 left-0 z-50 p-1 flex items-center bg-gradient-to-b from-black via-gray-900 to-transparent">
       <div className="container mx-auto flex items-center justify-between text-white">
         
         {/* Sinistra: Dove Siamo (spostato più a sinistra) */}
-        <div className="flex-1 flex justify-end pr-32">
-          <a 
-            href="#dove-siamo" 
-            className={`whitespace-nowrap font-fugaz text-black text-2xl tracking-wide uppercase transition duration-200 ${hoverColorDove}`}
-            onMouseEnter={() => setHoverColorDove(getRandomColor())}
-          >
-            Dove siamo
-          </a>
+        <div className="flex-1 flex justify-end pr-32 space-x-82">
+        <a 
+            href="#galleria" 
+            className="whitespace-nowrap hover:text-gray-500 font-fugaz text-2xl tracking-wide uppercase transition duration-200 text-white"
+            // onMouseEnter={() => setHoverColorGalleria(getRandomColor())}
+        >
+            Galleria
+        </a>
+        <a 
+          href="#dove-siamo" 
+          className={`whitespace-nowrap font-fugaz text-2xl tracking-wide uppercase transition duration-200 ${hoverColorDove || "text-white"}`}
+          onMouseEnter={() => setHoverColorDove(getRandomColor())}
+        >
+          Dove siamo
+        </a>
         </div>
 
         {/* Centro: Logo perfettamente centrato */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer">
+        <div className="absolute left-1/2 transform -translate-x-1/2 cursor-pointer bg-white/80 px-0.5 py-0 rounded-sm shadow-sm">
           <Image
             src="/logo_ciompi.svg"
             alt="Logo Spazio Ai Ciompi"
-            width={142}  
-            height={142}
+            width={80}  
+            height={70}
           />
         </div>
 
         {/* Destra: Chi Siamo (spostato più a destra) */}
-        <div className="flex-1 flex justify-start pl-32">
-          <a 
-            href="#chi-siamo" 
-            className={`whitespace-nowrap font-fugaz text-black text-2xl tracking-wide uppercase transition duration-200 ${hoverColorChi}`}
-            onMouseEnter={() => setHoverColorChi(getRandomColor())}
+        <div className="flex-1 flex justify-start pl-32 space-x-102">
+        <a 
+          href="#chi-siamo" 
+          className={`whitespace-nowrap font-fugaz text-2xl tracking-wide uppercase transition duration-200 ${hoverColorChi || "text-white"}`}
+          onMouseEnter={() => setHoverColorChi(getRandomColor())}
+        >
+          Chi siamo
+        </a>
+        <a 
+            href="#info" 
+            className="whitespace-nowrap hover:text-gray-500 font-fugaz text-2xl tracking-wide uppercase transition duration-200 text-white"
+            // onMouseEnter={() => setHoverColorInfo(getRandomColor())}
           >
-            Chi siamo
-          </a>
+            Info
+        </a>
         </div>
 
         {/*Bandiere*/}
@@ -52,8 +69,8 @@ export default function Navbar() {
             <Image 
               src="/it.svg" 
               alt="IT" 
-              width={18} 
-              height={28} 
+              width={24} 
+              height={32} 
               className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`}
             />
           </button>
@@ -61,8 +78,8 @@ export default function Navbar() {
             <Image 
               src="/gb.svg" 
               alt="EN" 
-              width={18} 
-              height={28} 
+              width={24} 
+              height={32} 
               className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`}
             />
           </button>

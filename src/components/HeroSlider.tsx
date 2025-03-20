@@ -5,15 +5,17 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import HeroTitle from "./HeroTitle";
+import MovingText from "./MovingText";
 import Image from "next/image";
 
 export default function HeroSlider() {
   return (
     <div>
     <HeroTitle />
+    <MovingText />
     <Swiper
       modules={[Autoplay]}
-      autoplay={{ delay: 24000 }}
+      autoplay={{ delay: 12000 }}
       loop
       className="w-full h-screen relative"
     >
@@ -21,7 +23,7 @@ export default function HeroSlider() {
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/spazio_ciompi_sfondo.png"
+            src="/scorcio_tagliato_ciompi.jpg"
             alt="Spazio Ai Ciompi"
             fill
             className="w-full h-full object-cover"
@@ -30,22 +32,22 @@ export default function HeroSlider() {
       </SwiperSlide>
 
       {/* Slide 2 */}
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/seconda_immagine.jpeg"
+            src="/ingresso_ciompi.jpg"
             alt="Seconda immagine"
             fill
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
 
       {/* Slide 3 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/terza_immagine.jpeg"
+            src="/piazza_ciompi.jpeg"
             alt="Terza immagine"
             fill
             className="w-full h-full object-cover"
