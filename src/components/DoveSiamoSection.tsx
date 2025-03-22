@@ -4,8 +4,8 @@ export default function DoveSiamoSection() {
     return (
       <section id="dove-siamo" className="bg-gray-100 py-20 text-center">
         <div className="container mx-auto">
-          <h2 className="text-3xl text-black font-fugaz">DOVE SIAMO</h2>
-          <p className="mt-4 text-2xl text-gray-900 max-w-2xl mx-auto">
+          <h2 className="text-3xl text-black font-extrabold font-poppins">DOVE SIAMO</h2>
+          <p className="mt-4 text-xl text-gray-900 max-w-2xl mx-auto">
             Ci troviamo nel <span className="font-bold">centro</span> di <span className="font-bold">Firenze</span>, in una delle piazze più <span className="font-bold">iconiche</span> e <span className="font-bold">autentiche</span> dello storico quartiere di <span className="font-bold">S. Ambrogio</span><br/><br/>Piazza de Ciompi, 17
           </p>
           <iframe

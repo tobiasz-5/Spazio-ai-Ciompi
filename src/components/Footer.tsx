@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="w-full bg-gray-100 bg-gradient-to-t from-black via-gray-800 to-transparent text-white py-8 text-center">
@@ -12,9 +14,9 @@ export default function Footer() {
 
         {/* Centro: Cookie & Privacy Policy */}
         <div className="md:w-1/3 text-center">
-          <a href="#">
+          <Link href="/cookie-privacy" className="text-white hover:text-blue-300">
             Cookie & Privacy
-          </a>
+          </Link>
         </div>
 
         {/* Destra: Crediti */}

@@ -3,16 +3,16 @@ export default function InfoSection() {
     return (
       <section id="info" className="bg-white py-20 text-center">
         <div className="container mx-auto">
-          <h2 className="text-3xl text-black font-fugaz">INFO</h2>
-          <p className="mt-4 text-2xl text-gray-900 max-w-2xl mx-auto">
+          <h2 className="text-3xl text-black font-extrabold font-poppins">INFO</h2>
+          <p className="mt-4 text-xl text-gray-900 max-w-2xl mx-auto">
             Per <span className="font-bold">prenotare</span> questo spazio invia un <span className="font-bold">messaggio</span> {" "}
-            <a href="https://wa.me/393717665575" target="_blank" className="text-blue-600 hover:underline">
+            <a href="https://wa.me/393717665575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
               WhatsApp
             </a>{" "} o {" "}
             <a href="sms:+393717665575" className="text-blue-600 hover:underline">
               SMS
             </a>{" "} al numero {" "}
-            <a href="https://wa.me/393717665575" target="_blank" className="text-blue-600 hover:underline">
+            <a href="https://wa.me/393717665575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
              +39 371 766 5575
             </a><br/><br/>
             Altrimenti invia una <span className="font-bold">mail</span> all&apos;indirizzo {" "}

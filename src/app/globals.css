@@ -54,6 +54,10 @@ body {
   /* font-family: 'Red Rose', sans-serif; */
 }
 
+.font-julius {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
 .font-climate {
   font-family: 'Climate Crisis', sans-serif;
 }
@@ -70,11 +74,18 @@ body {
   font-family: 'Fugaz One', cursive;
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif
+}
+
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Nasconde l’overflow orizzontale per tutta la pagina */
 }
+
+
+
 
 
 

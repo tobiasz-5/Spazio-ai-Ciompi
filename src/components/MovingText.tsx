@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const items = [
-  { text: "Eventi Culturali", color: "text-red-400", direction: "left" },
-  { text: "Mostre", color: "text-blue-400", direction: "right" },
-  { text: "Workshop", color: "text-green-400", direction: "left" },
-  { text: "Lezioni", color: "text-orange-400", direction: "right" },
-  { text: "Incontri Professionali", color: "text-purple-400", direction: "left" },
+  { text: "Eventi Culturali", color: "text-[#D48B5C]", direction: "left" }, // Marrone caldo
+  { text: "Mostre", color: "text-[#2A7FAA]", direction: "right" }, // Blu profondo
+  { text: "Workshop", color: "text-[#F5C97F]", direction: "left" }, // Beige dorato
+  { text: "Lezioni", color: "text-[#D48B5C]", direction: "right" }, // Grigio scuro neutro
+  { text: "Incontri Professionali", color: "text-[#7A956B]", direction: "left" }, // Marrone caldo
 ];
+
+
 
 const getRandom = (min: number, max: number) => Math.random() * (max - min) + min;
 
@@ -19,7 +21,7 @@ export default function MovingText() {
   useEffect(() => {
     setRandomData(
       items.map(() => ({
-        size: Math.round(getRandom(2, 3)), // Dimensione casuale
+        size: Math.round(getRandom(1, 3)), // Dimensione casuale
         offset: getRandom(10, 20), // Offset verticale casuale
         delay: getRandom(0, 4), // Ritardo iniziale casuale
       }))
@@ -27,7 +29,7 @@ export default function MovingText() {
   }, []);
 
   return (
-    <div className="absolute font-fugaz top-70 left-0 w-full h-[142px] flex flex-col justify-center items-center z-50">
+    <div className="absolute font-poppins top-70 left-0 w-full h-[142px] flex flex-col justify-center items-center z-50">
       {randomData.length > 0 &&
         items.map((item, index) => {
           const randomDuration = getRandom(24, 55);
@@ -49,7 +51,7 @@ export default function MovingText() {
                 repeatDelay: getRandom(2, 5),
                 delay: randomData[index].delay, // Ritardo ora gestito solo lato client
               }}
-              className={`text-${randomData[index].size}xl font-bold uppercase ${item.color} text-center whitespace-nowrap bg-black/70 px-2 py-1 rounded-md`}
+              className={`text-${randomData[index].size}xl font-extrabold uppercase ${item.color} text-center whitespace-nowrap bg-black/70 px-2 py-1 rounded-md`}
               style={{
                 position: "relative",
                 top: `${index * 10 + randomData[index].offset}px`,
