@@ -19,18 +19,6 @@ export default function HeroSlider() {
       loop
       className="w-full h-screen relative"
     >
-      {/* Slide 2 */}
-      {/* <SwiperSlide>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <Image
-            src="/ingresso_ciompi.jpg"
-            alt="Seconda immagine"
-            fill
-            className="w-full h-full object-contain"
-          />
-        </div>
-      </SwiperSlide> */}
-
       {/* Slide 3 */}
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
@@ -68,17 +56,6 @@ export default function HeroSlider() {
           />
         </div>
       </SwiperSlide>
-      {/* Slide 3
-      <SwiperSlide>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <img
-            src="/quarta_immagine.jpeg"
-            alt="Terza immagine"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </SwiperSlide> */}
-
     </Swiper>
     </div>
   );

@@ -19,7 +19,7 @@ export default function HeroTitle() {
   const [buttonColor, setButtonColor] = useState("text-white");
 
   return (
-    <div className="absolute top-[10%] left-1/2 transform -translate-x-1/2 text-center z-10">
+    <div className="absolute top-[2%] left-1/2 transform -translate-x-1/2 text-center z-10">
       <motion.h1
         initial={{ scale: [0.1, 0.5], y: -142, opacity: 0 }}
         animate={{ scale: 1, y: 42, opacity: 1 }}
@@ -36,7 +36,7 @@ export default function HeroTitle() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
-        className={`absolute top-[690%] text-xl font-julius font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 ${buttonColor} bg-black/70 py-3 px-6 rounded-lg`}
+        className={`absolute top-[550%] max-2xl:top-[550%]  max-xl:top-[550%] max-lg:top-[600%] max-md:top-[600%] max-sm:top-[600%] max-[421px]:!top-[420%] text-xl font-julius font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 ${buttonColor} bg-black/70 py-3 px-6 rounded-lg`}
         onMouseEnter={() => setButtonColor(getRandomColor())}
       >
         PRENOTA QUESTO SPAZIO
