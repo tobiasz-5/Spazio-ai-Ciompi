@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full bg-gray-100 bg-gradient-to-t from-black via-gray-800 to-transparent text-white py-8 text-center">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] font-glow">
         
         {/* Sinistra: Copyright */}
         <div className="md:w-1/3 text-left">

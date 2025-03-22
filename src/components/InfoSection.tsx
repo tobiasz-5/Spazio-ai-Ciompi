@@ -2,9 +2,9 @@
 export default function InfoSection() {
     return (
       <section id="info" className="bg-white py-20 text-center">
-        <div className="container mx-auto">
-          <h2 className="text-3xl text-black font-extrabold font-poppins">INFO</h2>
-          <p className="mt-4 text-xl text-gray-900 max-w-2xl mx-auto">
+        <div className="container max-w-[87%] sm:max-w-xl mx-auto px-4">
+          <h2 className="text-3xl text-black font-glow">INFO</h2>
+          <p className="mt-4 text-[16px] text-gray-900 max-w-2xl font-lora mx-auto">
             Per <span className="font-bold">prenotare</span> questo spazio invia un <span className="font-bold">messaggio</span> {" "}
             <a href="https://wa.me/393717665575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
               WhatsApp

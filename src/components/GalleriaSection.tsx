@@ -11,10 +11,10 @@ import Image from "next/image";
 export default function GalleriaSection() {
   return (
     <section id="galleria" className="bg-gray-100 py-20 text-center">
-      <div className="container mx-auto">
-        <h2 className="text-4xl text-black font-poppins font-extrabold">GALLERIA</h2>
-        <p className="mt-2 text-gray-700 text-xl">
-          Scopri le <span className="font-bold">immagini</span> e i <span className="font-bold">video</span> del nostro <span className="font-bold">spazio...</span>
+      <div className="container max-w-[87%] mx-auto">
+        <h2 className="text-4xl text-black font-glow">GALLERIA</h2>
+        <p className="mt-2 text-gray-700 text-[16px] font-lora">
+          il nostro <span className="font-bold">spazio...</span>
         </p>
 
         {/* Swiper Slider */}

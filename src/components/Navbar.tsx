@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
 
         {/* Sinistra (menu desktop) */}
-        <div className="hidden md:flex space-x-8 ml-9 pl-[182px]">
+        <div className="hidden md:flex space-x-8 ml-9 pl-[182px] max-[1020px]:px-16 max-[1020px]:ml-[-60px] mx-auto px-4">
           <a href="#galleria" className={`font-glow text-[14px] font-extrabold uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())}>Galleria</a>
           <a href="#dove-siamo" className={`font-glow text-[14px] font-extrabold uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())}>Dove Siamo</a>
         </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
         </div>
 
         {/* Destra (menu desktop) */}
-        <div className="hidden md:flex space-x-8 items-center mr-18 pr-[201px]">
+        <div className="hidden md:flex space-x-8 items-center mr-18 pr-[201px] max-[1020px]:px-16 max-[1020px]:mr-[-2px] mx-auto px-4">
           <a href="#chi-siamo" className={`font-glow font-extrabold text-[14px] uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())}>Chi Siamo</a>
           <a href="#info" className={`font-glow font-extrabold text-[14px] uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())}>Info</a>
         </div>
