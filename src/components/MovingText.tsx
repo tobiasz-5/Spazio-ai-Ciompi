@@ -51,7 +51,7 @@ export default function MovingText() {
                 repeatDelay: getRandom(2, 5),
                 delay: randomData[index].delay, // Ritardo ora gestito solo lato client
               }}
-              className={`text-${randomData[index].size}xl font-extrabold uppercase ${item.color} text-center whitespace-nowrap  px-2 py-1 rounded-md`}
+              className={`text-${randomData[index].size}xl font-extrabold uppercase ${item.color} text-center whitespace-nowrap text-glow px-2 py-1`}
               style={{
                 position: "relative",
                 top: `${index * 10 + randomData[index].offset}px`,
