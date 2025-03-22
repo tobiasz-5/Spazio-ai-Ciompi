@@ -29,7 +29,7 @@ export default function MovingText() {
   }, []);
 
   return (
-    <div className="absolute font-fugaz top-70 left-0 w-full h-[142px] flex flex-col justify-center items-center z-50">
+    <div className="absolute font-fugaz top-52 left-0 w-full h-[142px] flex flex-col justify-center items-center z-50">
       {randomData.length > 0 &&
         items.map((item, index) => {
           const randomDuration = getRandom(24, 55);
