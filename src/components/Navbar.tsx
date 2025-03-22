@@ -41,7 +41,7 @@ export default function Navbar() {
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="container h-[90px] mx-auto px-4 py-2 flex items-center justify-between text-white overflow-hidden">
+      <div className="container h-[72px] mx-auto px-4 py-2 flex items-center justify-between text-white overflow-hidden">
         {/* Link sinistra (desktop) */}
         <div className="hidden md:flex space-x-8">
           <a
