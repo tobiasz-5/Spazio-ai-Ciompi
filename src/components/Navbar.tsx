@@ -46,45 +46,59 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-8">
           <a
             href="#galleria"
-            className={`font-poppins text-lg uppercase transition-colors ${hoverColorGalleria || "text-white"}`}
+            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorGalleria || "text-white"}`}
             onMouseEnter={() => setHoverColorGalleria(getRandomColor())}
           >
             Galleria
           </a>
           <a
             href="#dove-siamo"
-            className={`font-poppins text-lg uppercase transition-colors ${hoverColorDove || "text-white"}`}
+            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorDove || "text-white"}`}
             onMouseEnter={() => setHoverColorDove(getRandomColor())}
           >
             Dove Siamo
           </a>
         </div>
 
-        {/* Logo centrato */}
-        <div className="flex-shrink-0">
+        {/* Logo centrato per desktop */}
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
           <Link href="/">
             <Image
               src="/Spazio_ciompi_white.png"
               alt="Logo Spazio Ai Ciompi"
               width={100}
               height={70}
-              className="w-[100px] max-sm:w-[70px] h-auto"
+              className="w-[100px] h-auto"
             />
           </Link>
         </div>
+
+        {/* Logo centrato per mobile */}
+        <div className="absolute md:hidden left-1/2 transform -translate-x-1/2">
+          <Link href="/">
+            <Image
+              src="/Spazio_ciompi_white.png"
+              alt="Logo Spazio Ai Ciompi"
+              width={70}
+              height={50}
+              className="w-[70px] h-auto"
+            />
+          </Link>
+        </div>
+
 
         {/* Link destra (desktop) */}
         <div className="hidden md:flex space-x-8 items-center">
           <a
             href="#chi-siamo"
-            className={`font-poppins text-lg uppercase transition-colors ${hoverColorChi || "text-white"}`}
+            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorChi || "text-white"}`}
             onMouseEnter={() => setHoverColorChi(getRandomColor())}
           >
             Chi Siamo
           </a>
           <a
             href="#info"
-            className={`font-poppins text-lg uppercase transition-colors ${hoverColorInfo || "text-white"}`}
+            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorInfo || "text-white"}`}
             onMouseEnter={() => setHoverColorInfo(getRandomColor())}
           >
             Info
@@ -124,10 +138,10 @@ export default function Navbar() {
       {/* Menu mobile */}
       {isMenuOpen && (
         <div className="md:hidden px-4 pb-4 flex flex-col space-y-4 bg-gray-900/90">
-          <a href="#galleria" className={`font-poppins text-lg uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Galleria</a>
-          <a href="#dove-siamo" className={`font-poppins text-lg uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Dove Siamo</a>
-          <a href="#chi-siamo" className={`font-poppins text-lg uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Chi Siamo</a>
-          <a href="#info" className={`font-poppins text-lg uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Info</a>
+          <a href="#galleria" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Galleria</a>
+          <a href="#dove-siamo" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Dove Siamo</a>
+          <a href="#chi-siamo" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Chi Siamo</a>
+          <a href="#info" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Info</a>
         </div>
       )}
     </nav>

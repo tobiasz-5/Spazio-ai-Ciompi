@@ -49,7 +49,18 @@ export default function HeroSlider() {
       <SwiperSlide>
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/scorcio_tagliato_ciompi.jpg"
+            src="/scorcio_3.jpg"
+            alt="Spazio Ai Ciompi"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </SwiperSlide>
+            {/* Slide 1 */}
+            <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/scorcio_scroce.jpeg"
             alt="Spazio Ai Ciompi"
             fill
             className="w-full h-full object-cover"
