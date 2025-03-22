@@ -41,7 +41,7 @@ export default function Navbar() {
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="container h-[72px] mx-auto px-4 py-2 flex items-center justify-between text-white overflow-hidden">
+      <div className="container h-[72px] mx-auto px-4 py-2 flex items-center justify-center gap-[300px] text-white overflow-hidden">
         {/* Link sinistra (desktop) */}
         <div className="hidden md:flex space-x-8">
           <a
@@ -89,44 +89,35 @@ export default function Navbar() {
 
         {/* Link destra (desktop) */}
         <div className="hidden md:flex space-x-8 items-center">
-          <a
-            href="#chi-siamo"
-            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorChi || "text-white"}`}
-            onMouseEnter={() => setHoverColorChi(getRandomColor())}
-          >
-            Chi Siamo
-          </a>
-          <a
-            href="#info"
-            className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorInfo || "text-white"}`}
-            onMouseEnter={() => setHoverColorInfo(getRandomColor())}
-          >
-            Info
-          </a>
-          <div className="flex space-x-2">
-            <button onClick={() => setLanguage("it")}> 
-              <Image
-                src="/it.svg"
-                alt="IT"
-                width={18}
-                height={32}
-                className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`}
-              />
-            </button>
-            <button onClick={() => setLanguage("en")}> 
-              <Image
-                src="/gb.svg"
-                alt="EN"
-                width={18}
-                height={32}
-                className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`}
-              />
-            </button>
-          </div>
+          <a href="#chi-siamo" className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())}>Chi Siamo</a>
+          <a href="#info" className={`font-fugaz text-[14px] uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())}>Info</a>
         </div>
 
+        {/* Bandiere (sempre visibili) */}
+        <div className="absolute space-x-2 items-center px-2 ml-[200px]">
+          <button onClick={() => setLanguage("it")}> 
+            <Image
+              src="/it.svg"
+              alt="IT"
+              width={18}
+              height={32}
+              className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`}
+            />
+          </button>
+          <button onClick={() => setLanguage("en")}> 
+            <Image
+              src="/gb.svg"
+              alt="EN"
+              width={18}
+              height={32}
+              className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`}
+            />
+          </button>
+        </div>
+
+
         {/* Hamburger (mobile) */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center mr-[200px]">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle Menu">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
