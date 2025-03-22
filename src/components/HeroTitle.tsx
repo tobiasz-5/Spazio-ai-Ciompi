@@ -36,7 +36,7 @@ export default function HeroTitle() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
-        className={`absolute top-[550%] max-2xl:top-[550%] max-xl:top-[560%] max-lg:top-[600%] max-md:top-[600%] max-sm:top-[600%] max-[421px]:!top-[570%] max-[371px]:!top-[390%] text-xl max-sm:text-sm max-[421px]:text-base max-[371px]:text-sm font-julius font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 ${buttonColor} bg-black/70 py-3 px-6 rounded-lg`}
+        className={`absolute top-[550%] max-2xl:top-[550%] max-xl:top-[552%] max-lg:top-[600%] max-md:top-[600%] max-sm:top-[600%] max-[421px]:!top-[570%] max-[371px]:!top-[390%] text-xl max-sm:text-sm max-[421px]:text-base max-[371px]:text-sm font-julius font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 ${buttonColor} bg-black/70 py-3 px-6 rounded-lg`}
         onMouseEnter={() => setButtonColor(getRandomColor())}
       >
         PRENOTA QUESTO SPAZIO
