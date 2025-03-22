@@ -38,7 +38,7 @@ export default function CookiePrivacyPolicy() {
       {/* SEZIONE COOKIE POLICY */}
       <h2 className="text-2xl font-bold mt-10 text-[#D48B5C]">\ud83d\udd39 Cookie Policy</h2>
       <p className="text-lg mb-4">
-        Questo sito utilizza <span className="text-[#2A7FAA] font-bold">cookie</span> per migliorare l'esperienza di navigazione e per raccogliere dati statistici.
+        Questo sito utilizza <span className="text-[#2A7FAA] font-bold">cookie</span> per migliorare l esperienza di navigazione e per raccogliere dati statistici.
       </p>
 
       <h3 className="text-xl font-bold mt-6 text-[#7A956B]">Tipologie di cookie utilizzati</h3>
