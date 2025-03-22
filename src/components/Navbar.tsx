@@ -66,9 +66,9 @@ export default function Navbar() {
             <Image
               src="/Spazio_ciompi_white.png"
               alt="Logo Spazio Ai Ciompi"
-              width={100}
-              height={70}
-              className="w-[100px] h-auto"
+              width={80}
+              height={60}
+              className="w-[80px] h-auto"
             />
           </Link>
         </div>
@@ -108,7 +108,7 @@ export default function Navbar() {
               <Image
                 src="/it.svg"
                 alt="IT"
-                width={24}
+                width={18}
                 height={32}
                 className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`}
               />
@@ -117,7 +117,7 @@ export default function Navbar() {
               <Image
                 src="/gb.svg"
                 alt="EN"
-                width={24}
+                width={18}
                 height={32}
                 className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`}
               />
