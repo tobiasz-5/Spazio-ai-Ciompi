@@ -30,7 +30,7 @@ export default function OverlayTextAnimation() {
   const currentItem = items[currentIndex];
 
   return (
-    <div className="absolute mt-[-1100px] top-0 left-0 w-full h-full z-50 flex justify-center items-center pointer-events-none">
+    <div className="absolute mt-[-1100px] text-center top-0 left-0 w-full h-full z-50 flex justify-center items-center pointer-events-none">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentItem.text}
