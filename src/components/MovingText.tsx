@@ -1,66 +1,49 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const items = [
-  { text: "Eventi Culturali", color: "text-[#9C4B32]", direction: "left" }, // Marrone caldo
-  { text: "Mostre", color: "text-[#2A7FAA]", direction: "right" }, // Blu profondo
-  { text: "Workshop", color: "text-[#F5C97F]", direction: "left" }, // Beige dorato
-  { text: "Lezioni", color: "text-[#D48B5C]", direction: "right" }, // Grigio scuro neutro
-  { text: "Incontri Professionali", color: "text-[#7A956B]", direction: "left" }, // Marrone caldo
+  { text: "Eventi Culturali", color: "text-[#9C4B32]" },
+  { text: "Mostre", color: "text-[#2A7FAA]" },
+  { text: "Workshop", color: "text-[#F5C97F]" },
+  { text: "Lezioni", color: "text-[#D48B5C]" },
+  { text: "Incontri Professionali", color: "text-[#7A956B]" },
 ];
 
+const variants = {
+  initial: { opacity: 0, y: 50, scale: 0.95 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 0, y: -50, scale: 1.05 },
+};
 
-
-const getRandom = (min: number, max: number) => Math.random() * (max - min) + min;
-
-export default function MovingText() {
-  const [randomData, setRandomData] = useState<{ size: number; offset: number; delay: number }[]>([]);
+export default function OverlayTextAnimation() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    setRandomData(
-      items.map(() => ({
-        size: Math.round(getRandom(1, 2)), // Dimensione casuale
-        offset: getRandom(10, 20), // Offset verticale casuale
-        delay: getRandom(0, 4), // Ritardo iniziale casuale
-      }))
-    );
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % items.length);
+    }, 3000); // Cambia elemento ogni 3 secondi
+    return () => clearInterval(intervalId);
   }, []);
 
-  return (
-    <div className="absolute font-fugaz top-52 left-0 w-full h-[142px] flex flex-col justify-center items-center z-50">
-      {randomData.length > 0 &&
-        items.map((item, index) => {
-          const randomDuration = getRandom(24, 55);
+  const currentItem = items[currentIndex];
 
-          return (
-            <motion.div
-              key={index}
-              initial={{
-                x: item.direction === "left" ? `-${getRandom(100, 110)}vw` : `${getRandom(100, 105)}vw`,
-              }}
-              animate={{
-                x: item.direction === "left" ? `${getRandom(100, 120)}vw` : `-${getRandom(100, 114)}vw`,
-              }}
-              transition={{
-                duration: randomDuration,
-                ease: "linear",
-                repeat: Infinity,
-                repeatType: "loop",
-                repeatDelay: getRandom(2, 5),
-                delay: randomData[index].delay, // Ritardo ora gestito solo lato client
-              }}
-              className={`text-${randomData[index].size}xl font-extrabold uppercase ${item.color} text-center whitespace-nowrap text-glow px-2 py-1`}
-              style={{
-                position: "relative",
-                top: `${index * 10 + randomData[index].offset}px`,
-              }}
-            >
-              {item.text}
-            </motion.div>
-          );
-        })}
+  return (
+    <div className="absolute mt-[-1100px] top-0 left-0 w-full h-full z-50 flex justify-center items-center pointer-events-none">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentItem.text}
+          className={`text-4xl font-fugaz font-bold uppercase ${currentItem.color}`}
+          variants={variants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.8 }}
+        >
+          {currentItem.text}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
