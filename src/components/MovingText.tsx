@@ -4,11 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const items = [
-  { text: "Eventi Culturali", color: "text-[#9C4B32]" },
-  { text: "Mostre", color: "text-[#2A7FAA]" },
-  { text: "Workshop", color: "text-[#F5C97F]" },
-  { text: "Lezioni", color: "text-[#D48B5C]" },
-  { text: "Incontri Professionali", color: "text-[#7A956B]" },
+  { text: "", color: "text-[#f5f5f5]" },
 ];
 
 const variants = {
@@ -34,7 +30,7 @@ export default function OverlayTextAnimation() {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentItem.text}
-          className={`text-4xl font-fugaz font-bold uppercase ${currentItem.color}`}
+          className={`text-4xl font-glow font-bold uppercase ${currentItem.color}`}
           variants={variants}
           initial="initial"
           animate="animate"
