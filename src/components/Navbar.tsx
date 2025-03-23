@@ -20,6 +20,7 @@ export default function Navbar() {
     "text-[#F5C97F]",
     "text-[#7A956B]",
     "text-[#f5f5f5]",
+    "text-[#9C4B32]",
   ];
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
@@ -35,11 +36,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-black via-gray-900 to-transparent transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+      className={`w-full fixed top-0 left-0 z-101 bg-gradient-to-b from-black via-gray-900 to-transparent transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="container h-[72px] mx-auto px-4 py-2 flex items-center justify-between relative text-white overflow-hidden">
         {/* Bandierine desktop */}
-        <div className="hidden md:flex space-x-2 absolute right-1 top-1/2 -translate-y-1/2">
+        <div className="hidden md:flex space-x-2 absolute right-4 top-1/2 -translate-y-1/2">
           <button onClick={() => setLanguage("it")}> 
             <Image src="/it.svg" alt="IT" width={18} height={32} className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`} />
           </button>
@@ -89,11 +90,11 @@ export default function Navbar() {
 
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div className="md:hidden px-4 pb-4 flex flex-col space-y-4 bg-gray-900/90">
-          <a href="#galleria" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Galleria</a>
-          <a href="#dove-siamo" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Dove Siamo</a>
-          <a href="#chi-siamo" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Chi Siamo</a>
-          <a href="#info" className={`font-fugaz text-lg uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Info</a>
+        <div className="md:hidden text-center pt-2 pb-2 flex flex-col space-y-4 bg-gray-900/90">
+          <a href="#galleria" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Galleria</a>
+          <a href="#dove-siamo" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Dove Siamo</a>
+          <a href="#chi-siamo" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Chi Siamo</a>
+          <a href="#info" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Info</a>
         </div>
       )}
     </nav>

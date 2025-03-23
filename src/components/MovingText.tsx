@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const items = [
-  { text: "Eventi Culturali", color: "text-[#D48B5C]", direction: "left" }, // Marrone caldo
+  { text: "Eventi Culturali", color: "text-[#9C4B32]", direction: "left" }, // Marrone caldo
   { text: "Mostre", color: "text-[#2A7FAA]", direction: "right" }, // Blu profondo
   { text: "Workshop", color: "text-[#F5C97F]", direction: "left" }, // Beige dorato
   { text: "Lezioni", color: "text-[#D48B5C]", direction: "right" }, // Grigio scuro neutro
