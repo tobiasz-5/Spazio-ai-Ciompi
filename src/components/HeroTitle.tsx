@@ -1,8 +1,10 @@
-"use client";
-
+'use client';
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function HeroTitle() {
+  const { t } = useTranslation("common");
+
   return (
     <div className="absolute top-[0.32%] left-1/2 transform -translate-x-1/2 text-center z-10">
       <motion.a
@@ -23,7 +25,7 @@ export default function HeroTitle() {
         transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
         className="absolute mt-[-90px] top-[550%] max-2xl:top-[550%] max-xl:top-[552%] max-lg:top-[600%] max-md:top-[600%] max-sm:top-[600%] max-[421px]:!top-[520%] max-[371px]:!top-[520%] text-[14px] font-glow font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 text-white bg-black/50 hover:bg-black/70 py-3 px-6 rounded-lg"
       >
-        PRENOTA
+        {t("hero.prenota")}
       </motion.a>
     </div>
   );

@@ -1,7 +1,9 @@
-"use client";
+'use client';
 import { useEffect, useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function DoveSiamoSection() {
+  const { t } = useTranslation("common");
   const [cookieConsent, setCookieConsent] = useState(false);
 
   useEffect(() => {
@@ -13,11 +15,14 @@ export default function DoveSiamoSection() {
   return (
     <section id="dove-siamo" className="bg-gray-100 py-20 text-center">
       <div className="max-w-[87%] sm:max-w-xl mx-auto px-4">
-        <h2 className="text-3xl text-black font-glow">DOVE SIAMO</h2>
-        <p className="mt-4 text-[16px] text-gray-900 max-w-2xl font-lora mx-auto">
-          Ci troviamo nel <span className="font-bold">centro</span> di <span className="font-bold">Firenze</span>, in una delle piazze più <span className="font-bold">iconiche</span> dello storico quartiere di <span className="font-bold">S. Ambrogio</span>
-          <br /><br />
-          Piazza de Ciompi, 17
+        <h2 className="text-3xl text-black font-glow">{t("doveSiamo.title")}</h2>
+        <p className="mt-4 text-[16px] text-gray-900 max-w-2xl font-lora mx-auto whitespace-pre-line">
+          <Trans
+            i18nKey="doveSiamo.description"
+            components={{
+              bold: <span className="font-bold" />
+            }}
+          />
         </p>
         {cookieConsent ? (
           <iframe
@@ -28,7 +33,7 @@ export default function DoveSiamoSection() {
           />
         ) : (
           <p className="mt-4 text-red-500 text-sm">
-            Per visualizzare la mappa, accetta i cookie.
+            {t("doveSiamo.noConsent")}
           </p>
         )}
       </div>

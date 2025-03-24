@@ -1,5 +1,5 @@
-"use client";
-
+'use client';
+import { useTranslation, Trans } from 'react-i18next';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -9,12 +9,17 @@ import "swiper/css/autoplay";
 import Image from "next/image";
 
 export default function GalleriaSection() {
+  const { t } = useTranslation('common');
+
   return (
     <section id="galleria" className="bg-gray-100 py-20 text-center">
       <div className="container max-w-[87%] mx-auto">
-        <h2 className="text-4xl text-black font-glow">GALLERIA</h2>
+        <h2 className="text-4xl text-black font-glow">{t('galleria.title')}</h2>
         <p className="mt-2 text-gray-700 text-[16px] font-lora">
-          Il nostro <span className="font-bold">spazio...</span>
+          <Trans 
+            i18nKey="galleria.description" 
+            components={{ bold: <span className="font-bold" /> }}
+          />
         </p>
 
         {/* Swiper Slider */}
@@ -38,8 +43,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-
-            {/* Slide 3: Immagine */}
+            {/* Slide 2: Immagine */}
             <SwiperSlide>
               <div className="relative w-full h-96">
                 <Image
@@ -50,7 +54,6 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-
             {/* Slide 3: Immagine */}
             <SwiperSlide>
               <div className="relative w-full h-96">
@@ -111,7 +114,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>            <SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_3.jpg"
@@ -120,7 +124,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>            <SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_4.jpg"
@@ -129,7 +134,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>            <SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_5.jpg"
@@ -138,7 +144,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>            <SwiperSlide>
+            </SwiperSlide>
+            <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/seconda_immagine.jpeg"

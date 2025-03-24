@@ -6,6 +6,72 @@
       "info": "Info",
       "toggleMenu": "Toggle Menu"
     },
+
+    "chiSiamo": {
+        "title": "ABOUT US",
+        "description": "Spazio ai Ciompi is a venue dedicated to <bold>cultural events, exhibitions, workshops, classes, and professional meetings</bold>."
+    },
+
+    "doveSiamo": {
+        "title": "OUR LOCATION",
+        "description": "We are located in the <bold>heart</bold> of <bold>Florence</bold>, in one of the most <bold>iconic</bold> squares of the historic <bold>S. Ambrogio</bold> district.\n\nPiazza de Ciompi, 17",
+        "noConsent": "To view the map, please accept cookies."
+    },
+
+    "info": {
+        "title": "INFO",
+        "booking": "To <bold>book</bold> this space, send a <bold>message</bold> via <linkWhatsApp>WhatsApp</linkWhatsApp> or <linkSMS>SMS</linkSMS> to the number <linkNumber>+39 371 766 5575</linkNumber>\n\nAlternatively, send an <bold>email</bold> to <linkEmail>spazioaiciompi@gmail.com</linkEmail>\n\nThe <bold>main room</bold> is <bold>40sqm</bold>\n\nThe venue also offers <bold>sanitary facilities</bold> and an additional <bold>separate area</bold> for preparing cold food and drinks\n\nAvailable for booking <bold>every day</bold> of the week\n\nOperating hours are from <bold>10:00</bold> to <bold>23:00</bold>"
+    },
+
+    "galleria": {
+        "title": "GALLERY",
+        "description": "Our <bold>venue...</bold>"
+    },
+
+    "cookiePolicy": {
+        "title": "Privacy & Cookie Policy",
+        "privacyTitle": "Privacy Policy",
+        "privacyDescription": "This page explains how we collect, use, and protect your personal data in accordance with the General Data Protection Regulation (<bold>GDPR - EU Regulation 2016/679</bold>).",
+        "dataCollectedTitle": "What data do we collect?",
+        "dataCollected": {
+          "item1": "Data provided voluntarily (e.g. email, name when you contact us).",
+          "item2": "Browsing data (e.g. IP addresses, analytics data, cookies)."
+        },
+        "dataUsageTitle": "Why do we collect this data?",
+        "dataUsage": {
+          "item1": "To respond to inquiries and contacts.",
+          "item2": "To analyze site visits in order to improve functionality.",
+          "item3": "To integrate external services such as Google Maps."
+        },
+        "googleMapsTitle": "Google Maps and third-party data",
+        "googleMapsDescription": "This site uses <bold>Google Maps</bold> to display our venue's location. Google may collect information from users interacting with the map, including IP addresses and location data. <link>Google Privacy Policy</link>.",
+        "userRightsTitle": "User Rights",
+        "userRightsDescription": "Under the GDPR, you have the right to access, modify, or delete your data. For requests, please contact us at <link>spazioaiciompi@gmail.com</link>.",
+        "cookieTitle": "Cookie Policy",
+        "cookieDescription": "This site uses <bold>cookies</bold> to enhance your browsing experience and to collect statistical data.",
+        "cookieTypesTitle": "Types of Cookies Used",
+        "cookieTypes": {
+          "essentialTitle": "Essential Cookies",
+          "essentialDescription": "Necessary for the operation of the site.",
+          "analyticsTitle": "Analytics Cookies",
+          "analyticsDescription": "Collect anonymous data on visits (e.g. Google Analytics).",
+          "thirdPartyTitle": "Third-Party Cookies",
+          "thirdPartyDescription": "Used by external services such as Google Maps."
+        },
+        "cookieManagementTitle": "How to manage cookies?",
+        "cookieManagementDescription": "You can disable cookies in your browser settings:",
+        "contactTitle": "Contact",
+        "contactDescription": "For questions regarding Privacy or Cookies, email us at <link>spazioaiciompi@gmail.com</link>."
+    },
+
+    "hero": {
+        "prenota": "BOOK NOW"
+    },
+
+    "footer": {
+        "rightsReserved": "All rights reserved"
+    },
+
     "welcome": "Welcome to Spazio ai Ciompi!",
     "cookieMessage": "This website uses cookies to improve your user experience. Accept to continue."
 }
