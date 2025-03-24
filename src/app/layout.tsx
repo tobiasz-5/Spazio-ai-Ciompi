@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 import Navbar from "@/components/Navbar";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
         
         {/* Contenuto dinamico delle pagine */}
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

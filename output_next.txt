@@ -1,0 +1,837 @@
+====== ./postcss.config.mjs ======
+const config = {
+  plugins: ["@tailwindcss/postcss"],
+};
+
+export default config;
+
+
+====== ./src/app/head.tsx ======
+// src/app/head.tsx
+import { DefaultSeo } from "next-seo";
+
+export default function Head() {
+  return (
+    <>
+      <DefaultSeo
+        title="Spazio ai Ciompi - Affitto per Eventi a Firenze"
+        description="Affitta uno spazio per eventi, mostre e workshop a Firenze. Scopri Spazio ai Ciompi!"
+        openGraph={{
+          type: "website",
+          locale: "it_IT",
+          url: "https://www.spazioaiciompi.it",
+          site_name: "Spazio ai Ciompi",
+        }}
+      />
+    </>
+  );
+}
+
+
+====== ./src/app/cookie-privacy/page.tsx ======
+"use client";
+
+export default function CookiePrivacyPolicy() {
+  return (
+    <section className="bg-gray-200 font-lora text-gray-900 py-16 px-6 max-w-3xl mx-auto pt-30">
+      <h1 className="text-4xl font-bold text-center mb-6 text-black">Privacy & Cookie Policy</h1>
+
+      {/* SEZIONE PRIVACY POLICY */}
+      <h2 className="text-2xl font-bold mt-8 text-black">\ud83d\udd39 Privacy Policy</h2>
+      <p className="text-lg mb-4">
+        Questa pagina descrive come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità con il Regolamento Generale sulla Protezione dei Dati <span className="text-[#2A7FAA]">(GDPR - Regolamento UE 2016/679)</span>.
+      </p>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Quali dati raccogliamo?</h3>
+      <ul className="list-disc pl-6 text-lg mb-4">
+        <li>Dati forniti volontariamente (es. email, nome quando ci contatti).</li>
+        <li>Dati di navigazione (es. indirizzi IP, dati analitici, cookies).</li>
+      </ul>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Perché raccogliamo questi dati?</h3>
+      <ul className="list-disc pl-6 text-lg mb-4">
+        <li>Rispondere a richieste e contatti.</li>
+        <li>Analizzare le visite al sito per migliorarne il funzionamento.</li>
+        <li>Integrare servizi esterni come Google Maps.</li>
+      </ul>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Google Maps e dati di terze parti</h3>
+      <p className="text-lg mb-4">
+        Questo sito utilizza <span className="text-black font-bold">Google Maps</span> per mostrare la posizione della sede. Google potrebbe raccogliere informazioni sugli utenti che interagiscono con la mappa, tra cui **indirizzi IP e dati di localizzazione**.
+        <a href="https://policies.google.com/privacy" target="_blank" className="text-[#2A7FAA] hover:underline"> Privacy Policy di Google</a>.
+      </p>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Diritti degli utenti</h3>
+      <p className="text-lg mb-4">
+        Ai sensi del GDPR, hai il diritto di accedere, modificare o cancellare i tuoi dati. Per richieste, contattaci a <a href="mailto:spazioaiciompi@gmail.com" className="text-[#2A7FAA] hover:underline">spazioaiciompi@gmail.com</a>.
+      </p>
+
+      {/* SEZIONE COOKIE POLICY */}
+      <h2 className="text-2xl font-bold mt-10 text-black">\ud83d\udd39 Cookie Policy</h2>
+      <p className="text-lg mb-4">
+        Questo sito utilizza <span className="text-black font-bold">cookie</span> per migliorare l esperienza di navigazione e per raccogliere dati statistici.
+      </p>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Tipologie di cookie utilizzati</h3>
+      <ul className="list-disc pl-6 text-lg mb-4">
+        <li><strong>Cookie essenziali:</strong> necessari per il funzionamento del sito.</li>
+        <li><strong>Cookie analitici:</strong> raccolgono dati anonimi sulle visite (es. Google Analytics).</li>
+        <li><strong>Cookie di terze parti:</strong> usati da servizi esterni come Google Maps.</li>
+      </ul>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Come gestire i cookie?</h3>
+      <p className="text-lg mb-4">
+        Puoi disabilitare i cookie dalle impostazioni del tuo browser:
+      </p>
+      <ul className="list-disc pl-6 text-lg">
+        <li>
+          <a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank" className="text-[#2A7FAA] hover:underline">
+            Google Chrome
+          </a>
+        </li>
+        <li>
+          <a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie" target="_blank" className="text-[#2A7FAA] hover:underline">
+            Mozilla Firefox
+          </a>
+        </li>
+        <li>
+          <a href="https://support.apple.com/it-it/HT201265" target="_blank" className="text-[#2A7FAA] hover:underline">
+            Safari
+          </a>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold mt-6 text-black">Contatti</h3>
+      <p className="text-lg">
+        Per domande sulla Privacy o sui Cookie, scrivici a <a href="mailto:spazioaiciompi@gmail.com" className="text-[#2A7FAA] hover:underline">spazioaiciompi@gmail.com</a>
+      </p>
+    </section>
+  );
+}
+
+
+====== ./src/app/page.tsx ======
+import HeroSlider from "@/components/HeroSlider";
+import ChiSiamoSection from "@/components/ChiSiamoSection";
+import DoveSiamoSection from "@/components/DoveSiamoSection";
+import InfoSection from "@/components/InfoSection";
+import GalleriaSection from "@/components/GalleriaSection";
+import Footer from "@/components/Footer";
+import "./globals.css";//qui
+
+export default function Home() {
+  return (
+    <main>
+      <HeroSlider />
+      <ChiSiamoSection />
+      <DoveSiamoSection />
+      <InfoSection />
+      <GalleriaSection />
+      <Footer /> 
+    </main>
+  );
+}
+
+
+====== ./src/app/globals.css ======
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Glaze&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+
+
+
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap'); */
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: 'Bebas Neue', sans-serif; */
+  /* font-family: 'Amatic SC', sans-serif; */
+  /* font-family: 'Rubik Glitch', sans-serif; */
+  /* font-family: 'Orbitron', sans-serif; */
+  /* font-family: 'Audiowide', sans-serif; */
+  /* font-family: 'Exo 2', sans-serif; */
+  /* font-family: 'Rajdhani', sans-serif; */
+  /* font-family: 'Oxanium', sans-serif; */
+  /* font-weight: 900; */
+  /* font-family: 'Aboreto', cursive; */
+  /* font-family: 'Kalnia', serif; */
+  font-family: 'Julius Sans One', sans-serif;
+  /* font-family: 'Red Rose', sans-serif; */
+}
+
+.font-julius {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.font-climate {
+  font-family: 'Climate Crisis', sans-serif;
+}
+
+.font-lora {
+  font-family: 'Lora', sans-serif;
+}
+
+.font-big-shoulders {
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-fugaz {
+  font-family: 'Fugaz One', cursive;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif
+}
+
+.text-glow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+====== ./src/app/layout.tsx ======
+// src/app/layout.tsx
+import Navbar from "@/components/Navbar";
+import "./globals.css";
+
+export const metadata = {
+  title: "Spazio ai Ciompi - Affitto per Eventi a Firenze",
+  description: "Affitta uno spazio per eventi, mostre e workshop a Firenze. Scopri Spazio ai Ciompi!",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="it">
+      <body className="bg-gray-100 min-h-screen">
+        {/* Navbar globale */}
+        <Navbar />
+        
+        {/* Contenuto dinamico delle pagine */}
+        {children}
+      </body>
+    </html>
+  );
+}
+
+
+====== ./src/components/Navbar.tsx ======
+"use client";
+
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Navbar() {
+  const [language, setLanguage] = useState("it");
+  const [hoverColorDove, setHoverColorDove] = useState("");
+  const [hoverColorChi, setHoverColorChi] = useState("");
+  const [hoverColorGalleria, setHoverColorGalleria] = useState("");
+  const [hoverColorInfo, setHoverColorInfo] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const colors = [
+    "text-[#D48B5C]",
+    "text-[#2A7FAA]",
+    "text-[#F5C97F]",
+    "text-[#7A956B]",
+    "text-[#f5f5f5]",
+    "text-[#9C4B32]",
+  ];
+  const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setIsVisible(currentScrollY < lastScrollY);
+      setLastScrollY(currentScrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  return (
+    <nav
+      className={`w-full fixed top-0 left-0 z-101 bg-gradient-to-b from-black via-gray-900 to-transparent transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+    >
+      <div className="container h-[72px] mx-auto px-4 py-2 flex items-center justify-between relative text-white overflow-hidden">
+        {/* Bandierine desktop */}
+        <div className="hidden md:flex space-x-2 absolute right-4 top-1/2 -translate-y-1/2">
+          <button onClick={() => setLanguage("it")}> 
+            <Image src="/it.svg" alt="IT" width={18} height={32} className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`} />
+          </button>
+          <button onClick={() => setLanguage("en")}> 
+            <Image src="/gb.svg" alt="EN" width={18} height={32} className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`} />
+          </button>
+        </div>
+
+        {/* Sinistra (menu desktop) */}
+        <div className="hidden md:flex space-x-8 ml-9 pl-[182px] max-[1020px]:px-16 max-[1020px]:ml-[-60px] mx-auto px-4">
+          <a href="#galleria" className={`font-glow text-[14px] font-extrabold uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())}>Galleria</a>
+          <a href="#dove-siamo" className={`font-glow text-[14px] font-extrabold uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())}>Dove Siamo</a>
+        </div>
+
+        {/* Centro: Logo sempre centrato */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <Link href="/">
+            <Image src="/Spazio_ciompi_white.png" alt="Logo Spazio Ai Ciompi" width={80} height={60} className="w-[80px] max-sm:w-[70px] h-auto" />
+          </Link>
+        </div>
+
+        {/* Destra (menu desktop) */}
+        <div className="hidden md:flex space-x-8 items-center mr-18 pr-[201px] max-[1020px]:px-16 max-[1020px]:mr-[-2px] mx-auto px-4">
+          <a href="#chi-siamo" className={`font-glow font-extrabold text-[14px] uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())}>Chi Siamo</a>
+          <a href="#info" className={`font-glow font-extrabold text-[14px] uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())}>Info</a>
+        </div>
+
+        {/* Mobile: Hamburger a sinistra */}
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle Menu">
+            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile: Bandierine a destra */}
+        <div className="md:hidden flex space-x-2">
+          <button onClick={() => setLanguage("it")}> 
+            <Image src="/it.svg" alt="IT" width={18} height={32} className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "it" ? "opacity-100" : "opacity-50"}`} />
+          </button>
+          <button onClick={() => setLanguage("en")}> 
+            <Image src="/gb.svg" alt="EN" width={18} height={32} className={`hover:brightness-125 transition duration-200 cursor-pointer ${language === "en" ? "opacity-100" : "opacity-50"}`} />
+          </button>
+        </div>
+      </div>
+
+      {/* Menu mobile */}
+      {isMenuOpen && (
+        <div className="md:hidden text-center pt-2 pb-2 flex flex-col space-y-4 bg-gray-900/90">
+          <a href="#galleria" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorGalleria || "text-white"}`} onMouseEnter={() => setHoverColorGalleria(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Galleria</a>
+          <a href="#dove-siamo" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorDove || "text-white"}`} onMouseEnter={() => setHoverColorDove(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Dove Siamo</a>
+          <a href="#chi-siamo" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorChi || "text-white"}`} onMouseEnter={() => setHoverColorChi(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Chi Siamo</a>
+          <a href="#info" className={`font-glow text-[16px] uppercase transition-colors ${hoverColorInfo || "text-white"}`} onMouseEnter={() => setHoverColorInfo(getRandomColor())} onClick={() => setIsMenuOpen(false)}>Info</a>
+        </div>
+      )}
+    </nav>
+  );
+}
+
+
+====== ./src/components/Footer.tsx ======
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="w-full bg-gray-100 bg-gradient-to-t from-black via-gray-800 to-transparent text-white py-8 text-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] font-glow">
+        
+        {/* Sinistra: Copyright */}
+        <div className="md:w-1/3 p-2 flex justify-center items-center text-center">
+          <p>
+            &copy; {new Date().getFullYear()} Spazio... Ai Ciompi <br/> Tutti i diritti riservati.
+          </p>
+        </div>
+
+        {/* Centro: Cookie & Privacy Policy */}
+        <div className="md:w-1/3 p-2 flex justify-center items-center text-center">
+          <Link href="/cookie-privacy" className="text-white hover:text-blue-300">
+            Cookie & Privacy
+          </Link>
+        </div>
+
+        {/* Destra: Crediti */}
+        <div className="md:w-1/3 p-2 flex justify-center items-center text-center">
+          <p>
+            Code: T. Schettini <br/> Contents: T.N.T Media & Communication
+          </p>
+        </div>
+
+      </div>
+    </footer>
+  );
+}
+
+
+====== ./src/components/GalleriaSection.tsx ======
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import Image from "next/image";
+
+export default function GalleriaSection() {
+  return (
+    <section id="galleria" className="bg-gray-100 py-20 text-center">
+      <div className="container max-w-[87%] mx-auto">
+        <h2 className="text-4xl text-black font-glow">GALLERIA</h2>
+        <p className="mt-2 text-gray-700 text-[16px] font-lora">
+          Il nostro <span className="font-bold">spazio...</span>
+        </p>
+
+        {/* Swiper Slider */}
+        <div className="mt-6 max-w-4xl mx-auto">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop
+            navigation
+            pagination={{ clickable: true }}
+            className="w-full h-96 rounded-lg shadow-lg"
+          >
+            {/* Slide 1: Immagine */}
+            <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/piazza_ciompi.jpeg"
+                  alt="Spazio interno"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+
+            {/* Slide 3: Immagine */}
+            <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/quarta_immagine.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+
+            {/* Slide 3: Immagine */}
+            <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/scorcio_scroce.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/scorcio_tagliato_ciompi.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/ingresso_ciompi.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-contain rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/terza_immagine.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_1.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_2.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_3.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_4.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_5.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/seconda_immagine.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+====== ./src/components/InfoSection.tsx ======
+// src/components/ChiSiamoSection.tsx
+export default function InfoSection() {
+    return (
+      <section id="info" className="bg-white py-20 text-center">
+        <div className="container max-w-[87%] sm:max-w-xl mx-auto px-4">
+          <h2 className="text-3xl text-black font-glow">INFO</h2>
+          <p className="mt-4 text-[16px] text-gray-900 max-w-2xl font-lora mx-auto">
+            Per <span className="font-bold">prenotare</span> questo spazio invia un <span className="font-bold">messaggio</span> {" "}
+            <a href="https://wa.me/393717665575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              WhatsApp
+            </a>{" "} o {" "}
+            <a href="sms:+393717665575" className="text-blue-600 hover:underline">
+              SMS
+            </a>{" "} al numero {" "}
+            <a href="https://wa.me/393717665575" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+             +39 371 766 5575
+            </a><br/><br/>
+            Altrimenti invia una <span className="font-bold">mail</span> all&apos;indirizzo {" "}
+            <a href="mailto:spazioaiciompi@gmail.com" className="text-blue-600 hover:underline">
+              spazioaiciompi@gmail.com
+            </a><br/><br/>
+            La <span className="font-bold">stanza principale</span> ha una superficie di <span className="font-bold">40mq</span> <br/><br/> Lo spazio dispone inoltre dei <span className="font-bold">servizi</span> e di un ulteriore <span className="font-bold">spazio separato</span> per la preparazione di cibi freddi e bevande <br/><br/>
+            Disponibile per la prenotazione <span className="font-bold">tutti i giorni</span> della settimana <br/><br/>
+            L&apos;orario di utilizzo è dalle <span className="font-bold">10:00</span> alle <span className="font-bold">23:00</span>
+          </p>
+        </div>
+      </section>
+    );
+  }
+  
+
+====== ./src/components/ChiSiamoSection.tsx ======
+// src/components/ChiSiamoSection.tsx
+export default function ChiSiamoSection() {
+  return (
+    <section id="chi-siamo" className="bg-white py-20 text-center">
+      <div className="max-w-[87%] sm:max-w-xl mx-auto px-4">
+        <h2 className="text-3xl text-black font-glow">CHI SIAMO</h2>
+        <p className="mt-4 text-[16px] text-gray-900 font-lora">
+          Spazio ai Ciompi è un luogo dedicato a <span className="font-bold">eventi culturali, mostre, workshop, lezioni e incontri professionali</span>.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+
+====== ./src/components/HeroSlider.tsx ======
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import HeroTitle from "./HeroTitle";
+import MovingText from "./MovingText";
+import Image from "next/image";
+
+export default function HeroSlider() {
+  return (
+    <div>
+    <HeroTitle />
+    <MovingText />
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{ delay: 12000 }}
+      loop
+      className="w-full h-screen relative"
+    >
+      {/* Slide 3 */}
+      <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/piazza_ciompi.jpeg"
+            alt="Terza immagine"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+      
+      </SwiperSlide>
+
+      {/* Slide 4 */}
+      <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/specchio.jpeg"
+            alt="Terza immagine"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+      </SwiperSlide>
+
+      {/* Slide 1 */}
+      <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/scorcio_3.jpg"
+            alt="Spazio Ai Ciompi"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </SwiperSlide>
+            {/* Slide 1 */}
+            <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/scorcio_scroce.jpeg"
+            alt="Spazio Ai Ciompi"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </SwiperSlide>
+    </Swiper>
+    </div>
+  );
+}
+
+
+====== ./src/components/MovingText.tsx ======
+"use client";
+
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+
+const items = [
+  { text: "", color: "text-[#f5f5f5]" },
+];
+
+const variants = {
+  initial: { opacity: 0, y: 50, scale: 0.95 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 0, y: -50, scale: 1.05 },
+};
+
+export default function OverlayTextAnimation() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % items.length);
+    }, 3000); // Cambia elemento ogni 3 secondi
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const currentItem = items[currentIndex];
+
+  return (
+    <div className="absolute mt-[-1100px] text-center top-0 left-0 w-full h-full z-50 flex justify-center items-center pointer-events-none">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentItem.text}
+          className={`text-4xl font-glow font-bold uppercase ${currentItem.color}`}
+          variants={variants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.8 }}
+        >
+          {currentItem.text}
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  );
+}
+
+
+====== ./src/components/DoveSiamoSection.tsx ======
+// src/components/DoveSiamoSection.tsx
+
+export default function DoveSiamoSection() {
+    return (
+      <section id="dove-siamo" className="bg-gray-100 py-20 text-center">
+        <div className="max-w-[87%] sm:max-w-xl mx-auto px-4">
+          <h2 className="text-3xl text-black font-glow">DOVE SIAMO</h2>
+          <p className="mt-4 text-[16px] text-gray-900 max-w-2xl font-lora mx-auto">
+            Ci troviamo nel <span className="font-bold">centro</span> di <span className="font-bold">Firenze</span>, in una delle piazze più <span className="font-bold">iconiche</span> dello storico quartiere di <span className="font-bold">S. Ambrogio</span><br/><br/>Piazza de Ciompi, 17
+          </p>
+          <iframe
+            className="w-full h-64 max-w-lg mx-auto rounded-lg shadow-md mt-4"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720.2730921710483!2d11.264458369593328!3d43.77094139819355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.1!3m3!1m2!1s0x132a5408b62d6551%3A0xdaa303b842cbd9b2!2sPiazza%20dei%20Ciompi%2C%2017%2C%2050122%20Firenze%20FI!5e0!3m2!1sit!2sit!4v1742417311294!5m2!1sit!2sit"
+            allowFullScreen
+            loading="lazy"
+          />
+        </div>
+      </section>
+    );
+  }
+  
+
+====== ./src/components/HeroTitle.tsx ======
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function HeroTitle() {
+  return (
+    <div className="absolute top-[0.32%] left-1/2 transform -translate-x-1/2 text-center z-10">
+      <motion.a
+        href="#chi-siamo"
+        initial={{ scale: [0.1, 0.5], y: -142, opacity: 0 }}
+        animate={{ scale: 1, y: 42, opacity: 1 }}
+        transition={{ duration: 2.4, ease: "easeOut" }}
+        className="text-[24px] mt-[20px] text-white px-4 py-2 rounded-lg inline-block cursor-pointer text-glow"
+      >
+        <span className="tracking-widest font-glow font-bold">SPAZIO...</span> <br />
+        <span className="font-glow font-bold">AI CIOMPI</span>
+      </motion.a>
+
+      <motion.a
+        href="#info"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
+        className="absolute mt-[-90px] top-[550%] max-2xl:top-[550%] max-xl:top-[552%] max-lg:top-[600%] max-md:top-[600%] max-sm:top-[600%] max-[421px]:!top-[520%] max-[371px]:!top-[520%] text-[14px] font-glow font-bold whitespace-nowrap left-1/2 transform -translate-x-1/2 text-white bg-black/50 hover:bg-black/70 py-3 px-6 rounded-lg"
+      >
+        PRENOTA
+      </motion.a>
+    </div>
+  );
+}
+
+
+====== ./next.config.ts ======
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
+
+
+====== ./eslint.config.mjs ======
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
+];
+
+export default eslintConfig;
+
+
+====== ./next-env.d.ts ======
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
+
+
