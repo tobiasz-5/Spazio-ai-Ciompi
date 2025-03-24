@@ -1,0 +1,12 @@
+{
+    "navbar": {
+      "galleria": "Gallery",
+      "doveSiamo": "Location",
+      "chiSiamo": "About Us",
+      "info": "Info",
+      "toggleMenu": "Toggle Menu"
+    },
+    "welcome": "Welcome to Spazio ai Ciompi!",
+    "cookieMessage": "This website uses cookies to improve your user experience. Accept to continue."
+}
+  
