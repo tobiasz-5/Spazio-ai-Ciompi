@@ -15,7 +15,7 @@ export default function HeroSlider() {
     <MovingText />
     <Swiper
       modules={[Autoplay]}
-      autoplay={{ delay: 12000 }}
+      autoplay={{ delay: 5000 }}
       loop
       className="w-full h-screen relative"
     >
@@ -31,6 +31,20 @@ export default function HeroSlider() {
           />
         </div>
       
+      </SwiperSlide>
+
+
+      {/* Slide 4 */}
+      <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/specchio.jpeg"
+            alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+
       </SwiperSlide>
 
       {/* Slide 1 */}
@@ -54,19 +68,6 @@ export default function HeroSlider() {
             className="w-full h-full object-cover"
           />
         </div>
-      </SwiperSlide>
-
-      {/* Slide 4 */}
-      <SwiperSlide>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <Image
-            src="/specchio.jpeg"
-            alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
-            fill
-            className="w-full h-full object-cover"
-          />
-        </div>
-
       </SwiperSlide>
 
       {/* Slide 4 */}

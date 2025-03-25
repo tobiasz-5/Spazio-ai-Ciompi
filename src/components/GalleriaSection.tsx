@@ -44,23 +44,23 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            {/* Slide 2: Immagine */}
-            <SwiperSlide>
-              <div className="relative w-full h-96">
-                <Image
-                  src="/quarta_immagine.jpeg"
-                  alt="Sant Ambrogio, Meetings, Events, Workshops"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </SwiperSlide>
+
             {/* Slide 3: Immagine */}
             <SwiperSlide>
               <div className="relative w-full h-96">
                 <Image
                   src="/scorcio_scroce.jpeg"
                   alt="Santa Croce, Incontri professionali, Eventi, Lezioni, Workshops"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/seconda_immagine.jpeg"
+                  alt="florence craftmanship"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -106,7 +106,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_1.jpeg"
@@ -115,8 +115,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_3.jpeg"
@@ -125,8 +125,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_2.jpeg"
@@ -135,7 +135,7 @@ export default function GalleriaSection() {
                   className="object-cover object-[center_90%] rounded-lg"
                 />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
@@ -146,7 +146,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_1.jpg"
@@ -155,7 +155,7 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
@@ -176,7 +176,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_2.jpg"
@@ -185,8 +185,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_2.jpeg"
@@ -195,18 +195,8 @@ export default function GalleriaSection() {
                   className="object-cover object-[center_10%] rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-             <div className="relative w-full h-96">
-                <Image
-                  src="/workshop_3.jpg"
-                  alt="Allestimento per meeting e presentazioni"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/eventi_1_3.jpeg"
@@ -215,7 +205,7 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg object-[center_20%]"
                 />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
@@ -236,7 +226,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_5.jpg"
@@ -245,17 +235,7 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-             <div className="relative w-full h-96">
-                <Image
-                  src="/seconda_immagine.jpeg"
-                  alt="florence craftmanship"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
@@ -266,7 +246,7 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_6.jpeg"
@@ -275,8 +255,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_7.jpeg"
@@ -285,8 +265,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_5.jpeg"
@@ -295,8 +275,8 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_8.jpeg"
@@ -305,7 +285,7 @@ export default function GalleriaSection() {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
@@ -326,11 +306,32 @@ export default function GalleriaSection() {
                 />
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_9_1.jpeg"
                   alt="lezioni"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide> */}
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_3.jpg"
+                  alt="Allestimento per meeting e presentazioni"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            {/* Slide 2: Immagine */}
+            <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/quarta_immagine.jpeg"
+                  alt="Sant Ambrogio, Meetings, Events, Workshops"
                   fill
                   className="object-cover rounded-lg"
                 />
