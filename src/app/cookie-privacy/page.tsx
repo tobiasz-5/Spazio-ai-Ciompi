@@ -1,5 +1,5 @@
 'use client';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from '../../../node_modules/react-i18next';
 
 export default function CookiePrivacyPolicy() {
   const { t } = useTranslation('common');

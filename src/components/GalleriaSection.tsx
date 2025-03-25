@@ -1,5 +1,5 @@
 'use client';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from '../../node_modules/react-i18next';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -76,6 +76,16 @@ export default function GalleriaSection() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
+              <div className="relative w-full h-96">
+                <Image
+                  src="/eventi.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
                   src="/ingresso_ciompi.jpg"
@@ -98,10 +108,70 @@ export default function GalleriaSection() {
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
+                  src="/lezione_ciompi_1.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_3.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_ciompi_2.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover object-[center_90%] rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/eventi_1_2.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
                   src="/workshop_1.jpg"
                   alt="Dettaglio artistico"
                   fill
                   className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_ciompi_3.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_1.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg object-[center_42%]"
                 />
               </div>
             </SwiperSlide>
@@ -118,6 +188,16 @@ export default function GalleriaSection() {
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
+                  src="/lezione_2.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover object-[center_10%] rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
                   src="/workshop_3.jpg"
                   alt="Dettaglio artistico"
                   fill
@@ -128,7 +208,27 @@ export default function GalleriaSection() {
             <SwiperSlide>
              <div className="relative w-full h-96">
                 <Image
+                  src="/eventi_1_3.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg object-[center_20%]"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
                   src="/workshop_4.jpg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/eventi_1_1.jpeg"
                   alt="Dettaglio artistico"
                   fill
                   className="object-cover rounded-lg"
@@ -149,6 +249,86 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/seconda_immagine.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_5_1.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_6.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_7.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_ciompi_5.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_8.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/lezione_ciompi_6.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_9.jpeg"
+                  alt="Dettaglio artistico"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+             <div className="relative w-full h-96">
+                <Image
+                  src="/workshop_9_1.jpeg"
                   alt="Dettaglio artistico"
                   fill
                   className="object-cover rounded-lg"

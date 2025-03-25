@@ -1,6 +1,6 @@
 'use client';
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 export default function HeroTitle() {
   const { t } = useTranslation("common");

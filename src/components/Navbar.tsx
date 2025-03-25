@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '../../node_modules/react-i18next';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";

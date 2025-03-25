@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation, Trans } from "../../node_modules/react-i18next";
 
 export default function DoveSiamoSection() {
   const { t } = useTranslation("common");
