@@ -69,6 +69,18 @@ export default function HeroSlider() {
           />
         </div>
       </SwiperSlide>
+      {/* Slide 4 */}
+      <SwiperSlide>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src="/seconda_immagine.jpeg"
+            alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
+            fill
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+      </SwiperSlide>
 
       {/* Slide 4 */}
       {/* <SwiperSlide>
