@@ -7,6 +7,9 @@ import "./globals.css";
 export const metadata = {
   title: "Spazio ai Ciompi - Affitto per Eventi a Firenze",
   description: "Affitta uno spazio per eventi, mostre e workshop a Firenze. Scopri Spazio ai Ciompi!",
+  other: {
+    "google-site-verification": "rZX57f15xG92OZg3j5oYzfIV6SJXYkQbJFv1LjW3cyA"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode; }) {
