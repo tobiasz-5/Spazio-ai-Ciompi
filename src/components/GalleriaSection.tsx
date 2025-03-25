@@ -37,9 +37,10 @@ export default function GalleriaSection() {
               <div className="relative w-full h-96">
                 <Image
                   src="/piazza_ciompi.jpeg"
-                  alt="Spazio interno"
+                  alt="Santa Croce, Meetings, Events, Workshops"
                   fill
                   className="object-cover rounded-lg"
+                  priority
                 />
               </div>
             </SwiperSlide>
@@ -48,7 +49,7 @@ export default function GalleriaSection() {
               <div className="relative w-full h-96">
                 <Image
                   src="/quarta_immagine.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Sant Ambrogio, Meetings, Events, Workshops"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -59,7 +60,7 @@ export default function GalleriaSection() {
               <div className="relative w-full h-96">
                 <Image
                   src="/scorcio_scroce.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Santa Croce, Incontri professionali, Eventi, Lezioni, Workshops"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -69,7 +70,7 @@ export default function GalleriaSection() {
               <div className="relative w-full h-96">
                 <Image
                   src="/scorcio_tagliato_ciompi.jpg"
-                  alt="Dettaglio artistico"
+                  alt="Area espositiva dello Spazio ai Ciompi con allestimento per mostre d'arte"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -79,7 +80,7 @@ export default function GalleriaSection() {
               <div className="relative w-full h-96">
                 <Image
                   src="/eventi.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Area esposizioni"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -89,7 +90,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/ingresso_ciompi.jpg"
-                  alt="Dettaglio artistico"
+                  alt="Esposizioni artistiche"
                   fill
                   className="object-contain rounded-lg"
                 />
@@ -99,7 +100,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/terza_immagine.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Evento culturale in corso nello Spazio ai Ciompi, con partecipanti e installazioni artistiche"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -109,7 +110,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_1.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Evento culturale in corso nello Spazio ai Ciompi, Firenze, con partecipanti e installazioni artistiche"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -119,7 +120,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_3.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Evento culturale"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -129,7 +130,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_2.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="partecipanti e installazioni artistiche"
                   fill
                   className="object-cover object-[center_90%] rounded-lg"
                 />
@@ -139,7 +140,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/eventi_1_2.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="workshop legno"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -149,7 +150,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_1.jpg"
-                  alt="Dettaglio artistico"
+                  alt="Il cavallino di legno"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -159,7 +160,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_3.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="attività artistiche"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -169,7 +170,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_1.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="attività artistiche, artigianato firenze"
                   fill
                   className="object-cover rounded-lg object-[center_42%]"
                 />
@@ -179,7 +180,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_2.jpg"
-                  alt="Dettaglio artistico"
+                  alt="artigianato firenze workshop"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -189,7 +190,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_2.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Spazio ai ciompi, eventi, cultura"
                   fill
                   className="object-cover object-[center_10%] rounded-lg"
                 />
@@ -199,7 +200,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_3.jpg"
-                  alt="Dettaglio artistico"
+                  alt="Allestimento per meeting e presentazioni"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -209,7 +210,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/eventi_1_3.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="Allestimento per meeting e presentazioni"
                   fill
                   className="object-cover rounded-lg object-[center_20%]"
                 />
@@ -219,7 +220,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_4.jpg"
-                  alt="Dettaglio artistico"
+                  alt="Allestimento eventi"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -229,7 +230,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/eventi_1_1.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="meeting, eventi e presentazioni"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -239,7 +240,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_5.jpg"
-                  alt="Dettaglio artistico"
+                  alt="craftman, wood, florence, room for many different kinds of events"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -249,7 +250,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/seconda_immagine.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="florence craftmanship"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -259,7 +260,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_5_1.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="S. Ambrogio an open space for art, culture, events, lessons"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -269,7 +270,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_6.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="S. Ambrogio art room"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -279,7 +280,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_7.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="cultural events"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -289,7 +290,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_5.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="open space for art exhibition"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -299,7 +300,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_8.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="open space for day rent florence center"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -309,7 +310,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/lezione_ciompi_6.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="open room for rent for lessons florence"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -319,7 +320,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_9.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="open room for exhibition"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -329,7 +330,7 @@ export default function GalleriaSection() {
              <div className="relative w-full h-96">
                 <Image
                   src="/workshop_9_1.jpeg"
-                  alt="Dettaglio artistico"
+                  alt="lezioni"
                   fill
                   className="object-cover rounded-lg"
                 />

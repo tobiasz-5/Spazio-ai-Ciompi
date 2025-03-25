@@ -24,9 +24,10 @@ export default function HeroSlider() {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/piazza_ciompi.jpeg"
-            alt="Terza immagine"
+            alt="Vista di fronte a Spazio ai Ciompi, ingresso storico a Firenze"
             fill
             className="w-full h-full object-cover"
+            priority
           />
         </div>
       
@@ -37,7 +38,7 @@ export default function HeroSlider() {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/scorcio_3.jpg"
-            alt="Spazio Ai Ciompi"
+            alt="Ingresso principale Spazio ai Ciompi, luogo per eventi e mostre"
             fill
             className="w-full h-full object-cover"
           />
@@ -48,7 +49,7 @@ export default function HeroSlider() {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/scorcio_scroce.jpeg"
-            alt="Spazio Ai Ciompi"
+            alt="Santa Croce, Meetings, Events, Workshops"
             fill
             className="w-full h-full object-cover"
           />
@@ -60,7 +61,7 @@ export default function HeroSlider() {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/specchio.jpeg"
-            alt="Terza immagine"
+            alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
             fill
             className="w-full h-full object-cover"
           />

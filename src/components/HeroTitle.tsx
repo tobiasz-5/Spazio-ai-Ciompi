@@ -7,6 +7,7 @@ export default function HeroTitle() {
 
   return (
     <div className="absolute top-[0.32%] left-1/2 transform -translate-x-1/2 text-center z-10">
+      <h1 className="sr-only"> Spazio ai Ciompi – Affitto Eventi, Mostre, Lezioni, Workshop, Exhibitions, Shows, Meetings - Firenze, Florence - Open Room, Space for rent</h1>
       <motion.a
         href="#chi-siamo"
         initial={{ scale: [0.1, 0.5], y: -142, opacity: 0 }}
