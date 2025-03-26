@@ -9,6 +9,9 @@ export const metadata = {
   description: "Affitta uno spazio per eventi, mostre e workshop a Firenze. Scopri Spazio ai Ciompi!",
   other: {
     "google-site-verification": "rZX57f15xG92OZg3j5oYzfIV6SJXYkQbJFv1LjW3cyA"
+  },
+  icons: {
+    icon: "/logo.png"
   }
 };
 
