@@ -5,7 +5,7 @@ export default function InfoSection() {
   const { t } = useTranslation('common');
 
   // Offuscamento leggero
-  const phone = '+39 371 766 5575';
+  // const phone = '+39 371 766 5575';
   const encodedPhone = '393717665575';
   const emailUser = 'spazioaiciompi';
   const emailDomain = 'gmail.com';
