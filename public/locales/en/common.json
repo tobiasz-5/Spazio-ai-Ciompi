@@ -23,6 +23,12 @@
         "booking": "To <bold>book</bold> this space, send a <bold>message</bold> via <linkWhatsApp>WhatsApp</linkWhatsApp> or <linkSMS>SMS</linkSMS> to the number <linkNumber>+39 371 766 5575</linkNumber>\n\nAlternatively, send an <bold>email</bold> to <linkEmail>spazioaiciompi@gmail.com</linkEmail>\n\nThe <bold>main room</bold> is <bold>40sqm</bold>\n\nThe venue also offers <bold>sanitary facilities</bold> and an additional <bold>separate area</bold> for preparing cold food and drinks\n\nThere are <bold>two entrances</bold>: one faces the square, the other is accessible from inside the building.\n\nAvailable for booking <bold>every day</bold> of the week\n\nOperating hours are from <bold>10:00</bold> to <bold>23:00</bold>"
     },
 
+    "eventi": {
+      "title": "Events",
+      "passedTitle": "Past Events",
+      "upcomingTitle": "Upcoming"
+    },
+
     "galleria": {
         "title": "GALLERY",
         "description": "Our <bold>venue...</bold>"

@@ -12,7 +12,7 @@ export default function GalleriaSection() {
   const { t } = useTranslation('common');
 
   return (
-    <section id="galleria" className="bg-gray-100 py-20 text-center">
+    <section id="galleria" className="bg-white py-20 text-center">
       <div className="container max-w-[87%] mx-auto">
         <h2 className="text-4xl text-black font-glow">{t('galleria.title')}</h2>
         <p className="mt-2 text-gray-700 text-[16px] font-lora">
