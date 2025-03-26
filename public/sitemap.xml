@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
-    <loc>https://www.spazioaiciompi.it/</loc>
+    <loc>https://www.spazioaiciompi.com/</loc>
     <lastmod>2025-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Pagina Cookie & Privacy Policy -->
   <url>
-    <loc>https://www.spazioaiciompi.it/chi-siamo</loc>
+    <loc>https://www.spazioaiciompi.com/cookie-privacy</loc>
     <lastmod>2025-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Aggiungere altre URL -->
 </urlset>
