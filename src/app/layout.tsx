@@ -36,12 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@type": "GeoCoordinates",
         "latitude": 43.7709414,
         "longitude": 11.2651021
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "telephone": "+39 3717665575",
-        "email": "spazioaiciompi@gmail.com"
       }
     },
     {
@@ -58,7 +52,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "postalCode": "50122",
         "addressCountry": "IT"
       },
-      "telephone": "+39 3717665575"
+      "telephone": "+39 3717665575",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+39 3717665575",
+        "email": "spazioaiciompi@gmail.com"
+      }
     },
     {
       "@context": "https://schema.org",
