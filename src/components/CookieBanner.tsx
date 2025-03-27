@@ -10,7 +10,7 @@ export default function CookieBanner() {
     if (!consent) {
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 1000); // Ritardo di 1s per migliorare LCP
+      }, 2000); // Ritardo di 1s per migliorare LCP
       return () => clearTimeout(timer);
     }
   }, []);
