@@ -5,14 +5,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import HeroTitle from "./HeroTitle";
-import MovingText from "./MovingText";
+// import MovingText from "./MovingText";
 import Image from "next/image";
 
 export default function HeroSlider() {
   return (
     <div>
     <HeroTitle />
-    <MovingText />
+    {/* <MovingText /> */}
     <Swiper
       modules={[Autoplay]}
       autoplay={{ delay: 5000 }}

@@ -32,13 +32,13 @@ export default function CookieBanner() {
       <div className="mt-2 md:mt-0 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
         <button
           onClick={handleAccept}
-          className="bg-[#2A7FAA] hover:bg-gray-800 text-white px-2 py-1 rounded-md text-[10px]"
+          className="bg-[#2A7FAA] hover:bg-gray-800 text-white px-2 py-1 rounded-md text-[14px]"
         >
           Accetta
         </button>
         <button
           onClick={handleReject}
-          className="bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded-md text-[10px]"
+          className="bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded-md text-[14px]"
         >
           Rifiuta
         </button>
