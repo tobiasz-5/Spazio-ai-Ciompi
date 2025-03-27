@@ -42,7 +42,6 @@ export default function HeroSlider() {
             alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
             fill
             className="w-full h-full object-cover"
-            loading="lazy"
           />
         </div>
 
@@ -56,7 +55,6 @@ export default function HeroSlider() {
             alt="Ingresso principale Spazio ai Ciompi, luogo per eventi e mostre"
             fill
             className="w-full h-full object-cover"
-            loading="lazy"
           />
         </div>
       </SwiperSlide>
@@ -68,7 +66,6 @@ export default function HeroSlider() {
             alt="Santa Croce, Meetings, Events, Workshops"
             fill
             className="w-full h-full object-cover"
-            loading="lazy"
           />
         </div>
       </SwiperSlide>
@@ -80,7 +77,6 @@ export default function HeroSlider() {
             alt="Interno accogliente di Spazio ai Ciompi allestito per workshop e eventi culturali"
             fill
             className="w-full h-full object-cover"
-            loading="lazy"
           />
         </div>
 
