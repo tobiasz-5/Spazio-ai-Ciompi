@@ -32,7 +32,7 @@ export default function DoveSiamoSection() {
             loading="lazy"
           />
         ) : (
-          <p className="mt-4 text-red-500 text-sm">
+          <p className="mt-4 text-red-900 text-sm">
             {t("doveSiamo.noConsent")}
           </p>
         )}
