@@ -53,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "addressCountry": "IT"
       },
       "telephone": "+39 3717665575",
+      "priceRange": "€ - €€€",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
@@ -64,6 +65,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "Eventi a Spazio ai Ciompi",
+      "startDate": "2025-04-12T18:00",
+      "image": [
+        "https://www.spazioaiciompi.com/eventi.jpeg"
+      ],
       "location": {
         "@type": "Place",
         "name": "Spazio ai Ciompi",
