@@ -8,10 +8,7 @@ export default function CookieBanner() {
   useEffect(() => {
     const consent = localStorage.getItem("cookieConsent");
     if (!consent) {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 2000); // Ritardo di 1s per migliorare LCP
-      return () => clearTimeout(timer);
+      setIsVisible(true);
     }
   }, []);
 
